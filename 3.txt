@@ -1,0 +1,12 @@
+export const metadata = {
+  title: "Moses & Ily Kava",
+  description: "A-Grade Yaqona from Vanua Levu"
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>{children}</body>
+    </html>
+  );
+}
