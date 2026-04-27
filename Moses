@@ -1,0 +1,55 @@
+{
+  "name": "moses-ily-kava",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "lucide-react": "^0.379.0"
+  }
+}import { QrCode } from "lucide-react";
+
+export default function Page() {
+  return (
+    <div style={{ background: "#052e16", color: "white", minHeight: "100vh", padding: "20px", fontFamily: "sans-serif" }}>
+      
+      <h1 style={{ textAlign: "center", fontSize: "40px" }}>
+        MOSES & ILY INVESTMENT
+      </h1>
+
+      <p style={{ textAlign: "center", color: "#86efac" }}>
+        Premium A-Grade Yaqona (Kava) from Vanua Levu
+      </p>
+
+      <div style={{ textAlign: "center", marginTop: "30px" }}>
+        <h2>Price List</h2>
+        <p>35g – $5</p>
+        <p>50g – $7</p>
+        <p>100g – $14</p>
+        <p>250g – $35</p>
+        <p>500g – $70</p>
+        <p><strong>1kg – $135 ⭐ BEST VALUE</strong></p>
+      </div>
+
+      <div style={{ textAlign: "center", marginTop: "40px" }}>
+        <h3>Scan to Order</h3>
+        <div style={{ display: "inline-block", background: "white", padding: "20px", borderRadius: "10px" }}>
+          <QrCode size={120} color="black" />
+          <p style={{ color: "black" }}>WhatsApp Orders</p>
+        </div>
+      </div>
+
+      <div style={{ textAlign: "center", marginTop: "40px", fontSize: "14px", color: "#86efac" }}>
+        <p>Tunuloa • Savusavu • Wailevu</p>
+        <p>Direct Farm Supply</p>
+      </div>
+
+    </div>
+  );
+}
